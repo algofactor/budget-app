@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.total-budget {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.352)), url("img-2.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.budget-desc {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.budget-figure {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.income-card, .expense-card {
+    width: 30%;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .7rem;
+    font-weight: 300;
+    border-radius: 4px;
+}
+
+.income-card {
+    background-color: rgb(3, 231, 212);
+    
+}
+
+.expense-card {
+    background-color: rgb(231, 56, 3);
+}
+
+.section-form {
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 1.2rem;
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form select {
+    padding: .5rem;
+    cursor: pointer;
+    outline: none;
+    margin: 0 1rem;    
+    border-radius: 4px;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+.input-form select option {
+    border: 1px solid rgb(177, 177, 177);
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-form input, .input-form button {
+    padding: .7rem;
+    margin: 0 1rem;
+    outline: none;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 4px;
+}
+
+.input-form input:nth-child(2){
+    width: 30%;
+}
+.input-form input:nth-child(3){
+    width: 100px;    
+}
+
+.input-form button {
+   border-radius: 50%;
+   padding: .5rem;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   background-color: transparent;
+   color: #03E7D4;
+}
+
+.budget-details {
+    padding: 2rem;
+}
+
+.details-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.income-cards, .expense-cards {
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.income-cards > p, .expense-cards > p {
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.1rem;
+}
+.income-cards > p {
+    color: #03E7D4;
+}
+
+.expense-cards > p {
+    color: #E73803;
+}
+
+.income-subcard, .expense-subcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem .5rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.income-subcard:nth-child(2n+1), 
+.expense-subcard:nth-child(2n+1){
+    background-color: #F5F5F5;
+}
+.income-subcard:nth-child(2n+2), 
+.expense-subcard:nth-child(2n+2){
+    background-color: transparent;
+}
+
+.income-subcard-value {
+    color: #03E7D4;
+}
+
+.expense-subcard-value {
+    color: #E73803;
+}
+
+.income-subcard-desc{
+    color: #4e4e4e;
+}
+
+@media screen and (max-width: 700px) {
+    .section-form {
+        padding: 1.2rem .5rem;
+    }
+
+    .input-form input:nth-child(2){
+        width: 100%;
+    }
+
+    .input-form input:nth-child(3){
+        width: 70px;    
+    }
+
+    .input-form input, .input-form button, .input-form select {
+        margin: 0 .7rem;
+        padding: .5rem;
+    }
+
+    .income-card, .expense-card {
+        width: 50%;
+    }
+
+    .budget-details {
+        padding: 2rem 1rem;
+    }
+
+    .details-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .income-cards, .expense-cards {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .income-subcard, .expense-subcard {
+        padding: 1rem .4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input-form input, .input-form button, .input-form select {
+        margin: 0 .25rem;
+        padding: .5rem;
+    }
+
+    .income-card, .expense-card {
+        width: 70%;
+    }
+
+    .budget-details {
+        padding: 2rem .5rem;
+    }
+
+}
