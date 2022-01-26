@@ -15,8 +15,6 @@ const Budget = () => {
     
     const [expenses, setExpenses] = useState([])
 
-    const commas = new Intl.NumberFormat("en-US")
-
     const getInput = (e) =>{
         setInputValue(e.target.value)    
     }
