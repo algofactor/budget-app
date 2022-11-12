@@ -7,7 +7,7 @@
 
 .total-budget {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.352)), url("img-2.jpg");
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -225,5 +225,49 @@
     .budget-details {
         padding: 2rem .5rem;
     }
+    .total-budget {
+        height: 70vh;
+    }
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .input-form select {
+        margin: .5rem 0; 
+        width: 100%;   
+    }
+    
+    .input-form input, .input-form button {
+        margin: 0 0;
+    }
+    
+    .input-form input:nth-child(2){
+        width: 100%;
+        margin: .5rem 0;
+    }
+    .input-form input:nth-child(3){
+        width: 100%;    
+        margin: .5rem 0;
+    }
+    
+    .input-form button {
+        margin: .5rem 0;
+    }
+
+    .details-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .income-cards, .expense-cards {
+        padding: 0 .5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    
 
 }
