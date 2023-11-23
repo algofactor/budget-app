@@ -19,7 +19,7 @@ Follow these steps to run Budgety in your local machine.
 ### Clone this repository
 
 ```bash
-git clone https://github.com/Pappyjay23/budget-app.git
+git clone https://github.com/algofactor/budget-app.git
 ```
 
 ### Navigate to directory
@@ -52,4 +52,4 @@ npm run build
 
 ## Credits ✍
 
-Implementation by [@Pappyjay23](https://github.com/Pappyjay23)
+Implementation by [@algofactor](https://github.com/algofactor)
