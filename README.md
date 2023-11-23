@@ -52,4 +52,4 @@ npm run build
 
 ## Credits ✍
 
-Implementation by [@Pappyjay23](https://github.com/Pappyjay23)
+Implementation by [@algofactor](https://github.com/algofactor)
